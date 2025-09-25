@@ -1,3 +1,4 @@
 export function calcTotal(price: number, tax: number) {
-  return Math.round((price + price * tax) * 100) / 100;
+  const total = price * (1 + tax);
+  return Math.round(total * 100) / 100;
 }
